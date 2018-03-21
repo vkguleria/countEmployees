@@ -15,7 +15,6 @@ def getCount(inptime):
     return count
 
 ap=argparse.ArgumentParser(description='Get the time during which the empolyee count is required')
-ap.add_argument('-p','--persons',dest='persons')
 ap.add_argument('-t','--time',dest='timestamp',required=True)
 results=ap.parse_args()
 pers=getCount(results.timestamp)
